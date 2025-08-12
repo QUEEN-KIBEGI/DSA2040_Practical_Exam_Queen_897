@@ -1,0 +1,75 @@
+2025-08-12 18:31:23,868 - INFO - === ETL PIPELINE STARTED ===
+2025-08-12 18:31:23,871 - INFO - -- EXTRACT PHASE --
+2025-08-12 18:31:23,871 - INFO - Generating 1000 synthetic records...
+2025-08-12 18:31:23,966 - INFO - Synthetic data generated with 1000 records
+2025-08-12 18:31:23,967 - INFO - Extracted 1000 raw records
+2025-08-12 18:31:23,968 - INFO - -- TRANSFORM PHASE --
+2025-08-12 18:31:23,968 - INFO - Starting data transformation...
+2025-08-12 18:31:24,052 - INFO - Transformation complete. Valid records: 383
+2025-08-12 18:31:24,052 - INFO - -- LOAD PHASE --
+2025-08-12 18:31:24,052 - INFO - Initializing database load...
+2025-08-12 18:31:24,063 - INFO - Removed existing database file
+2025-08-12 18:31:24,084 - INFO - Loading dimension tables...
+2025-08-12 18:31:24,103 - INFO - Preparing fact data...
+2025-08-12 18:31:24,117 - INFO - Database loaded successfully with:
+- 383 fact records
+- 306 customers
+- 366 time dimensions
+2025-08-12 18:31:24,118 - INFO - Foreign key validation passed
+2025-08-12 18:31:24,119 - INFO - === ETL PIPELINE COMPLETED SUCCESSFULLY ===
+2025-08-12 18:31:24,119 - INFO - Database verification: File size 131072 bytes
+2025-08-12 18:31:24,121 - INFO - Tables created:
+          name
+0  CustomerDim
+1      TimeDim
+2    SalesFact
+2025-08-12 18:34:31,614 - INFO - === ETL PIPELINE STARTED ===
+2025-08-12 18:34:31,614 - INFO - -- EXTRACT PHASE --
+2025-08-12 18:34:31,614 - INFO - Generating 1000 synthetic records...
+2025-08-12 18:34:31,699 - INFO - Synthetic data generated with 1000 records
+2025-08-12 18:34:31,699 - INFO - Extracted 1000 raw records
+2025-08-12 18:34:31,699 - INFO - -- TRANSFORM PHASE --
+2025-08-12 18:34:31,699 - INFO - Starting data transformation...
+2025-08-12 18:34:31,715 - INFO - Transformation complete. Valid records: 383
+2025-08-12 18:34:31,715 - INFO - -- LOAD PHASE --
+2025-08-12 18:34:31,715 - INFO - Initializing database load...
+2025-08-12 18:34:31,722 - INFO - Removed existing database file
+2025-08-12 18:34:31,734 - INFO - Loading dimension tables...
+2025-08-12 18:34:31,763 - INFO - Preparing fact data...
+2025-08-12 18:34:31,771 - INFO - Database loaded successfully with:
+- 383 fact records
+- 302 customers
+- 366 time dimensions
+2025-08-12 18:34:31,777 - INFO - Foreign key validation passed
+2025-08-12 18:34:31,778 - INFO - === ETL PIPELINE COMPLETED SUCCESSFULLY ===
+2025-08-12 18:34:31,779 - INFO - Database verification: File size 131072 bytes
+2025-08-12 18:34:31,783 - INFO - Tables created:
+          name
+0  CustomerDim
+1      TimeDim
+2    SalesFact
+2025-08-12 19:14:17,492 - INFO - === ETL PIPELINE STARTED ===
+2025-08-12 19:14:17,492 - INFO - -- EXTRACT PHASE --
+2025-08-12 19:14:17,496 - INFO - Generating 1000 synthetic records...
+2025-08-12 19:14:17,740 - INFO - Synthetic data generated with 1000 records
+2025-08-12 19:14:17,740 - INFO - Extracted 1000 raw records
+2025-08-12 19:14:17,740 - INFO - -- TRANSFORM PHASE --
+2025-08-12 19:14:17,740 - INFO - Starting data transformation...
+2025-08-12 19:14:17,820 - INFO - Transformation complete. Valid records: 383
+2025-08-12 19:14:17,820 - INFO - -- LOAD PHASE --
+2025-08-12 19:14:17,820 - INFO - Initializing database load...
+2025-08-12 19:14:17,820 - INFO - Removed existing database file
+2025-08-12 19:14:17,868 - INFO - Loading dimension tables...
+2025-08-12 19:14:17,900 - INFO - Preparing fact data...
+2025-08-12 19:14:17,916 - INFO - Database loaded successfully with:
+- 383 fact records
+- 303 customers
+- 366 time dimensions
+2025-08-12 19:14:17,926 - INFO - Foreign key validation passed
+2025-08-12 19:14:17,926 - INFO - === ETL PIPELINE COMPLETED SUCCESSFULLY ===
+2025-08-12 19:14:17,928 - INFO - Database verification: File size 131072 bytes
+2025-08-12 19:14:17,936 - INFO - Tables created:
+          name
+0  CustomerDim
+1      TimeDim
+2    SalesFact

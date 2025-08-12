@@ -1,0 +1,48 @@
+// Retail Star Schema
+digraph {
+	graph [rankdir=LR]
+	fact [label=<
+<table border="1" cellborder="0" cellspacing="0">
+  <tr><td bgcolor="#ffd8d8"><b>fact_sales</b></td></tr>
+  <tr><td align="left"><i>sale_id PK</i></td></tr>
+  <tr><td align="left"><i>product_id FK</i></td></tr>
+  <tr><td align="left"><i>customer_id FK</i></td></tr>
+  <tr><td align="left"><i>time_id FK</i></td></tr>
+  <tr><td align="left">quantity</td></tr>
+  <tr><td align="left">unit_price</td></tr>
+  <tr><td align="left">total_sale</td></tr>
+  <tr><td align="left">discount</td></tr>
+</table>> shape=none]
+	dim_product [label=<
+<table border="1" cellborder="0" cellspacing="0">
+  <tr><td bgcolor="#d8e8ff"><b>dim_product</b></td></tr>
+  <tr><td align="left">product_id PK</td></tr>
+<tr><td align="left">product_name</td></tr>
+<tr><td align="left">category</td></tr>
+<tr><td align="left">price</td></tr>
+<tr><td align="left">supplier_id</td></tr>
+</table>> shape=none]
+	dim_customer [label=<
+<table border="1" cellborder="0" cellspacing="0">
+  <tr><td bgcolor="#d8e8ff"><b>dim_customer</b></td></tr>
+  <tr><td align="left">customer_id PK</td></tr>
+<tr><td align="left">customer_name</td></tr>
+<tr><td align="left">email</td></tr>
+<tr><td align="left">city</td></tr>
+<tr><td align="left">country</td></tr>
+<tr><td align="left">loyalty_tier</td></tr>
+</table>> shape=none]
+	dim_time [label=<
+<table border="1" cellborder="0" cellspacing="0">
+  <tr><td bgcolor="#d8e8ff"><b>dim_time</b></td></tr>
+  <tr><td align="left">time_id PK</td></tr>
+<tr><td align="left">date</td></tr>
+<tr><td align="left">day_of_week</td></tr>
+<tr><td align="left">month</td></tr>
+<tr><td align="left">quarter</td></tr>
+<tr><td align="left">year</td></tr>
+</table>> shape=none]
+	dim_product -> fact [label="1 → N"]
+	dim_customer -> fact [label="1 → N"]
+	dim_time -> fact [label="1 → N"]
+}

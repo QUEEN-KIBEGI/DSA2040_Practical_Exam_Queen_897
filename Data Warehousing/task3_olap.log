@@ -1,0 +1,74 @@
+2025-08-12 19:43:44,936 - INFO - Executing Roll-up query...
+2025-08-12 19:43:44,954 - INFO - Roll-up query executed successfully. Returned 25 rows.
+2025-08-12 19:43:44,963 - INFO - Roll-up query result (first 5 rows):
+   Country  Quarter  Year  TotalSales  TotalInvoices
+0   France        3  2024    19675.65              9
+1  Germany        3  2024    25900.82             18
+2    Japan        3  2024    15347.50             12
+3       UK        3  2024    10008.46              9
+4      USA        3  2024     8286.58              5
+2025-08-12 19:43:44,965 - INFO - Executing Drill-down query...
+2025-08-12 19:43:44,969 - INFO - Drill-down query executed successfully. Returned 69 rows.
+2025-08-12 19:43:44,972 - INFO - Drill-down query result (first 5 rows):
+   Year  Month  InvoiceNo   StockCode                                       Description  Quantity  UnitPrice  TotalSales
+0  2024      8  INV-42197  SKU-592227                                               nan        34      72.38     2460.92
+1  2024      8  INV-68422  SKU-100936                    Expanded stable implementation        11      13.15      144.65
+2  2024      9  INV-14771  SKU-829524               Down-sized analyzing implementation        33      72.58     2395.14
+3  2024      9  INV-47855  SKU-806397               Quality-focused didactic moratorium        43      17.97      772.71
+4  2024      9  INV-48640  SKU-398306  Business-focused even-keeled process improvement         6      27.22      163.32
+2025-08-12 19:43:44,973 - INFO - Executing Slice query...
+2025-08-12 19:43:44,976 - INFO - Slice query executed successfully. Returned 0 rows.
+2025-08-12 19:43:44,977 - INFO - Slice query result (first 5 rows):
+Empty DataFrame
+Columns: [Year, Quarter, TotalElectronicsSales, TotalInvoices]
+Index: []
+2025-08-12 19:44:23,263 - INFO - Bar chart saved as 'task3_sales_by_country.png'
+2025-08-12 19:50:14,822 - INFO - Executing Roll-up query...
+2025-08-12 19:50:14,834 - INFO - Roll-up query executed successfully. Returned 25 rows.
+2025-08-12 19:50:14,840 - INFO - Roll-up query result (first 5 rows):
+   Country  Quarter  Year  TotalSales  TotalInvoices
+0   France        3  2024    19675.65              9
+1  Germany        3  2024    25900.82             18
+2    Japan        3  2024    15347.50             12
+3       UK        3  2024    10008.46              9
+4      USA        3  2024     8286.58              5
+2025-08-12 19:50:14,841 - INFO - Executing Drill-down query...
+2025-08-12 19:50:14,843 - INFO - Drill-down query executed successfully. Returned 69 rows.
+2025-08-12 19:50:14,846 - INFO - Drill-down query result (first 5 rows):
+   Year  Month  InvoiceNo   StockCode                                       Description  Quantity  UnitPrice  TotalSales
+0  2024      8  INV-42197  SKU-592227                                               nan        34      72.38     2460.92
+1  2024      8  INV-68422  SKU-100936                    Expanded stable implementation        11      13.15      144.65
+2  2024      9  INV-14771  SKU-829524               Down-sized analyzing implementation        33      72.58     2395.14
+3  2024      9  INV-47855  SKU-806397               Quality-focused didactic moratorium        43      17.97      772.71
+4  2024      9  INV-48640  SKU-398306  Business-focused even-keeled process improvement         6      27.22      163.32
+2025-08-12 19:50:14,849 - INFO - Executing Slice query...
+2025-08-12 19:50:14,853 - INFO - Slice query executed successfully. Returned 0 rows.
+2025-08-12 19:50:14,854 - INFO - Slice query result (first 5 rows):
+Empty DataFrame
+Columns: [Year, Quarter, TotalElectronicsSales, TotalInvoices]
+Index: []
+2025-08-12 19:50:15,052 - INFO - Bar chart saved as 'task3_sales_by_country.png'
+2025-08-12 20:30:54,682 - INFO - Executing Roll-up query...
+2025-08-12 20:30:54,688 - INFO - Roll-up query executed successfully. Returned 25 rows.
+2025-08-12 20:30:54,694 - INFO - Roll-up query result (first 5 rows):
+   Country  Quarter  Year  TotalSales  TotalInvoices
+0   France        3  2024    19675.65              9
+1  Germany        3  2024    25900.82             18
+2    Japan        3  2024    15347.50             12
+3       UK        3  2024    10008.46              9
+4      USA        3  2024     8286.58              5
+2025-08-12 20:30:54,694 - INFO - Executing Drill-down query...
+2025-08-12 20:30:54,694 - INFO - Drill-down query executed successfully. Returned 69 rows.
+2025-08-12 20:30:54,694 - INFO - Drill-down query result (first 5 rows):
+   Year  Month  InvoiceNo   StockCode                                       Description  Quantity  UnitPrice  TotalSales
+0  2024      8  INV-42197  SKU-592227                                               nan        34      72.38     2460.92
+1  2024      8  INV-68422  SKU-100936                    Expanded stable implementation        11      13.15      144.65
+2  2024      9  INV-14771  SKU-829524               Down-sized analyzing implementation        33      72.58     2395.14
+3  2024      9  INV-47855  SKU-806397               Quality-focused didactic moratorium        43      17.97      772.71
+4  2024      9  INV-48640  SKU-398306  Business-focused even-keeled process improvement         6      27.22      163.32
+2025-08-12 20:30:54,703 - INFO - Executing Slice query...
+2025-08-12 20:30:54,706 - INFO - Slice query executed successfully. Returned 0 rows.
+2025-08-12 20:30:54,706 - INFO - Slice query result (first 5 rows):
+Empty DataFrame
+Columns: [Year, Quarter, TotalElectronicsSales, TotalInvoices]
+Index: []

@@ -72,3 +72,27 @@ Index: []
 Empty DataFrame
 Columns: [Year, Quarter, TotalElectronicsSales, TotalInvoices]
 Index: []
+2025-08-14 16:00:13,132 - INFO - Executing Roll-up query...
+2025-08-14 16:00:13,151 - INFO - Roll-up query executed successfully. Returned 25 rows.
+2025-08-14 16:00:13,160 - INFO - Roll-up query result (first 5 rows):
+   Country  Quarter  Year  TotalSales  TotalInvoices
+0   France        3  2024    15701.71             10
+1  Germany        3  2024     9427.30              9
+2    Japan        3  2024    20189.47             17
+3       UK        3  2024    12930.46             10
+4      USA        3  2024    11853.68              7
+2025-08-14 16:00:13,162 - INFO - Executing Drill-down query...
+2025-08-14 16:00:13,165 - INFO - Drill-down query executed successfully. Returned 99 rows.
+2025-08-14 16:00:13,168 - INFO - Drill-down query result (first 5 rows):
+   Year  Month  InvoiceNo   StockCode                      Description  Quantity  UnitPrice  TotalSales
+0  2024      8  INV-25343  SKU-767519       Assimilated 24hour support        24       1.70       40.80
+1  2024      8  INV-47498  SKU-830868   Extended dedicated application         6      88.63      531.78
+2  2024      8  INV-56240  SKU-671409         Intuitive static ability        19      56.21     1067.99
+3  2024      9  INV-38728  SKU-560684  Fundamental executive groupware        40      81.89     3275.60
+4  2024      9  INV-46409  SKU-513152      Reduced holistic task-force        19      27.75      527.25
+2025-08-14 16:00:13,169 - INFO - Executing Slice query...
+2025-08-14 16:00:13,171 - INFO - Slice query executed successfully. Returned 0 rows.
+2025-08-14 16:00:13,172 - INFO - Slice query result (first 5 rows):
+Empty DataFrame
+Columns: [Year, Quarter, TotalElectronicsSales, TotalInvoices]
+Index: []

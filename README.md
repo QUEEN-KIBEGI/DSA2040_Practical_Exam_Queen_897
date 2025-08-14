@@ -9,6 +9,15 @@ This repository contains my complete submission for the DSA 2040 Data Warehousin
 ## Data Warehousing
      - Designed a star schema for a retail data warehouse to support analytical queries (e.g., sales by product category per quarter).
 ## 1. Schema Design and Diagram
+## Star Schema Design
+## Fact Table
+<img width="808" height="321" alt="image" src="https://github.com/user-attachments/assets/11dd832d-4076-4fce-81c7-14741ed12095" />
+## Dimension tables
+<img width="976" height="624" alt="image" src="https://github.com/user-attachments/assets/060cfa7a-beb0-4278-abd9-e9427b5d8cdd" />
+
+## Handdrawn Diagram
+![WhatsApp Image 2025-08-12 at 22 38 50_28597dab](https://github.com/user-attachments/assets/7ff754df-499e-49de-8a1b-a58ef9766ac5)
+
 
 ## 2. Why Star Schema
 The star schema was selected because:
@@ -17,6 +26,9 @@ The star schema was selected because:
 3. **Maintainability**: Flat dimension tables are easier to ETL than snowflake's normalized structure
 
 ## SQL Statements
+<img width="1027" height="810" alt="image" src="https://github.com/user-attachments/assets/08f7b557-5a95-469b-9624-9dcfee918d17" />
+<img width="864" height="322" alt="image" src="https://github.com/user-attachments/assets/6d407943-7120-40e7-83ba-35482ac5bf9a" />
+
 
 **Task 2**:
 ## ETL Process Implementation
@@ -28,21 +40,42 @@ The star schema was selected because:
       Uses Faker library for realistic descriptions/countries
 
 1. **Extraction and transformation code**
+   ## Extraction
+   <img width="1105" height="646" alt="image" src="https://github.com/user-attachments/assets/2e53002f-4a18-4673-85f8-9b4c26cdc005" />
+
 ## Transformations:
      Handles missing values
      Calculates TotalSales (Quantity × UnitPrice)
      Filters invalid records and last year of data
      Creates dimension tables (CustomerDim, TimeDim)
+<img width="991" height="599" alt="image" src="https://github.com/user-attachments/assets/64dea210-cc28-4df6-8776-206849657043" />
+<img width="914" height="681" alt="image" src="https://github.com/user-attachments/assets/0fb08636-9f3b-4f94-ba9a-29eaedafafc5" />
 
 2. **Loading to Database**
      Creates SQLite database with proper schema
      Establishes foreign key relationships
      Uses batch loading for efficiency
+<img width="962" height="767" alt="image" src="https://github.com/user-attachments/assets/fc222132-7658-44e5-833d-9f02985aeefb" />
+<img width="909" height="728" alt="image" src="https://github.com/user-attachments/assets/36588c45-16c4-45b8-a970-8dedbeba04db" />
 
-3. **Logging & Error Handling**:
+3. **Function to perform all ETL**
+   **Error checks**:
+  ## Missing value handling
+  ## Data type validation (e.g., InvoiceDate as datetime)
+   ## Foreign key integrity
+   <img width="937" height="636" alt="image" src="https://github.com/user-attachments/assets/f1a4e879-794b-4fcf-9ee7-053ee0bf3e1a" />
+
+4. **Logging and comments**:
      Tracks row counts at each stage
      Comprehensive error handling
      Progress logging with timestamps
+## Logging
+<img width="884" height="281" alt="image" src="https://github.com/user-attachments/assets/ec196ea1-b704-440d-96d4-241efda7b50c" />
+# Sample result log
+<img width="782" height="401" alt="image" src="https://github.com/user-attachments/assets/824f02e5-118f-4998-b6d9-ea9dae4d8ea8" />
+
+# Comments
+<img width="909" height="246" alt="image" src="https://github.com/user-attachments/assets/8faf5146-3309-4354-a1dc-b7d9a9a8453d" />
 
 
 **Task 3**:
@@ -58,12 +91,18 @@ This notebook executes three OLAP-style SQL queries on the retail data warehouse
 
 **Roll-up**
 <img width="922" height="481" alt="image" src="https://github.com/user-attachments/assets/c56f6f6d-6f18-4a92-bcb5-38fdf2a3a2ff" />
+<img width="904" height="233" alt="image" src="https://github.com/user-attachments/assets/ff80474a-0f89-4144-9aca-86d63e0107bb" />
 
 **drill-down**
+<img width="1077" height="500" alt="image" src="https://github.com/user-attachments/assets/25a8f294-4ab4-448f-8b20-d361e1357d5b" />
+<img width="1022" height="216" alt="image" src="https://github.com/user-attachments/assets/26302f96-b467-4ef0-9e27-0eeff81ef55a" />
 
 **slice**
+<img width="926" height="479" alt="image" src="https://github.com/user-attachments/assets/f36bf2df-7b73-4c28-8d6c-b121a5aaf508" />
+<img width="1015" height="155" alt="image" src="https://github.com/user-attachments/assets/bbf2844b-74cc-4f83-92a2-94de7ddeddac" />
 
 **Barchart of sales by Country**
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/45404168-ec0c-4ca7-9ac9-7d722b75ee5c" />
 
 
 **Report Analysis**
@@ -108,8 +147,22 @@ The star schema in retail_dw.db, with SalesFact linked to CustomerDim and TimeDi
 **Task 2**: Clustering
 
 **Implementation and Metricss**
+<img width="1146" height="795" alt="image" src="https://github.com/user-attachments/assets/e3bec549-9f19-4e6d-bfba-a48463c94c84" />
+<img width="974" height="799" alt="image" src="https://github.com/user-attachments/assets/d12ca85b-3330-4b21-9083-bad4a6c49876" />
+<img width="968" height="615" alt="image" src="https://github.com/user-attachments/assets/cab9372c-054c-451e-b6e2-980a596efdcf" />
+
+<img width="959" height="370" alt="image" src="https://github.com/user-attachments/assets/ccf286b3-18bd-48fb-9d9a-d369a1b88b11" />
 
 **Experiment and Visualizations**
+**Experiment**
+<img width="653" height="138" alt="image" src="https://github.com/user-attachments/assets/7076b1bc-086b-4d7e-b35b-631f5024d6e1" />
+<img width="609" height="154" alt="image" src="https://github.com/user-attachments/assets/b2f320f2-7e43-412e-864a-5e8077816bb1" />
+**Visualization**
+## Elbow curve
+<img width="2400" height="1500" alt="image-13" src="https://github.com/user-attachments/assets/cda7101b-c74e-4453-9320-aedd39bbb523" />
+
+## Visualize clusters
+<img width="3000" height="1800" alt="image-14" src="https://github.com/user-attachments/assets/925137e7-b14a-4f94-a9dd-85a3a67b5cba" />
 
 **Analysis Report**
 
@@ -152,11 +205,26 @@ This notebook implements Task 3 of the DSA 2040 Practical Exam (Section 2: Data 
 - Saves the tree visualization as `decision_tree.png`.
 
 **Predict on test set; compute accuracy, precision, recall, F1-score**
+**codes**
+<img width="1074" height="799" alt="image" src="https://github.com/user-attachments/assets/bf4a4674-c3ff-4d8d-9fcb-d31fe08d6993" />
+<img width="792" height="339" alt="image" src="https://github.com/user-attachments/assets/29ae038c-1241-4384-b0e7-050a9c6b7703" />
+
+**Results for accuracy, precision, recall, F1-score**
+<img width="760" height="364" alt="image" src="https://github.com/user-attachments/assets/9a6c59ae-fc3e-4b4b-ad9d-e9767af933ca" />
 
 **Decision Tree visual**
+<img width="6000" height="3000" alt="image-19" src="https://github.com/user-attachments/assets/c1cb9e61-485c-4077-ac53-9fae29b35e77" />
 
-**Compare with another classifier**
+**Compare with another classifier (e.g., KNN with k=5); report which is better and why**
+<img width="1128" height="271" alt="image" src="https://github.com/user-attachments/assets/c30963dd-25a8-44ca-8bc4-b3b763494191" />
 
+**Analysis Report**
+**Part A: Classification Results**
+  ## The Decision Tree achieved 96.7% accuracy with clear decision boundaries visualized in the tree diagram. Key splits used petal measurements, showing their importance in species classification. The KNN classifier (k=5) performed slightly better (100% accuracy) due to:
+  ## Inherited cluster structure from the data
+ ## Similarity-based approach working well with distinct species groupings
+  ## No overfitting with small k-value
+   ## However, the Decision Tree provides better interpretability - we can see that petal width ≤ 0.8 cm perfectly identifies setosa, while virginica requires petal length > 4.95 cm.
 
 **Part B: Association Rule Mining**
 - Generates synthetic transactional data (50 transactions, 3–8 items from 20-item pool with patterns).

@@ -2,6 +2,8 @@
 
 ## Overview
 This repository contains my complete submission for the DSA 2040 Data Warehousing and Data Mining practical exam. The implementation includes all required tasks for both sections:
+
+
 **Section 1**: Data Warehousing (Tasks 1-3)
 **Section 2**: Data Mining (Tasks 1-3)
 

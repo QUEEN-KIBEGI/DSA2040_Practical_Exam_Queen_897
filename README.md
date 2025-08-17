@@ -5,6 +5,7 @@ This repository contains my complete submission for the DSA 2040 Data Warehousin
 
 
 **Section 1**: Data Warehousing (Tasks 1-3)
+
 **Section 2**: Data Mining (Tasks 1-3)
 
 **Task 1**:
@@ -47,9 +48,13 @@ Implemented an ETL pipeline to generate and load synthetic retail data (1000 row
 
 ## Transformations:
      Handles missing values
+     
      Calculates TotalSales (Quantity × UnitPrice)
+     
      Filters invalid records and last year of data
+     
      Creates dimension tables (CustomerDim, TimeDim)
+     
 <img width="991" height="599" alt="image" src="https://github.com/user-attachments/assets/64dea210-cc28-4df6-8776-206849657043" />
 <img width="914" height="681" alt="image" src="https://github.com/user-attachments/assets/0fb08636-9f3b-4f94-ba9a-29eaedafafc5" />
 

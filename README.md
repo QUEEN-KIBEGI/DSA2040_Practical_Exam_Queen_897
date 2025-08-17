@@ -248,3 +248,38 @@ This notebook implements Task 3 of the DSA 2040 Practical Exam (Section 2: Data 
 
 **Analyze: Discuss one rule's implications**
 <img width="978" height="324" alt="image-28" src="https://github.com/user-attachments/assets/05aa6555-a072-48a2-88d2-c0dbf41a9dd7" />
+
+**Tools Used**
+## Python 3.x
+Purpose: Core programming language for all tasks.
+Usage: Used to write scripts and notebooks (e.g., task1_data_warehouse_design.ipynb, etl_retail.py, task3_olap_analysis.ipynb, mining_iris_basket.ipynb).
+## Jupyter Notebook
+Purpose: Interactive environment for developing and documenting Python code.
+Usage: Used to create and run .ipynb files (e.g., task1_data_warehouse_design.ipynb, task3_olap_analysis.ipynb, mining_iris_basket.ipynb) with markdown cells and code execution.
+## SQLite
+Purpose: Lightweight relational database management system.
+Usage: Used to create and manage databases (retail_warehouse.db for Task 1, retail_dw.db for Tasks 2 and 3) with SQL queries.
+## DB Browser for SQLite
+Purpose: GUI tool for viewing and verifying database contents.
+Usage: Recommended for inspecting table structures and data in retail_warehouse.db and retail_dw.db (e.g., screenshots for large files).
+## Draw.io
+Purpose: Online diagramming tool.
+Usage: Used to create the star_schema_diagram.png for visualizing the star schema design.
+## pandas
+Purpose: Python library for data manipulation and analysis.
+Usage: Used for data frame operations in ETL (etl_retail.py), OLAP queries (task3_olap_analysis.ipynb), and transactional data handling (mining_iris_basket.ipynb).
+## numpy
+Purpose: Python library for numerical computations.
+Usage: Used for random number generation and array operations in synthetic data creation (etl_retail.py, mining_iris_basket.ipynb).
+## faker
+Purpose: Python library for generating synthetic data.
+Usage: Used to create realistic retail data (e.g., Description, CustomerID) in etl_retail.py.
+## matplotlib
+Purpose: Python library for data visualization.
+Usage: Used to create bar charts (task3_sales_by_country.png) and Decision Tree visualization (decision_tree.png).
+## mlxtend
+Purpose: Python library for machine learning extensions.
+Usage: Used for Apriori algorithm (apriori, association_rules) and transaction encoding (TransactionEncoder) in mining_iris_basket.ipynb.
+## seaborn 
+Purpose: Python library for statistical data visualization.
+Usage: to generate a pairplot for the Iris dataset

@@ -2,12 +2,12 @@
 
 ## Overview
 This repository contains my complete submission for the DSA 2040 Data Warehousing and Data Mining practical exam. The implementation includes all required tasks for both sections:
-- **Section 1**: Data Warehousing (Tasks 1-3)
-- **Section 2**: Data Mining (Tasks 1-3)
+**Section 1**: Data Warehousing (Tasks 1-3)
+**Section 2**: Data Mining (Tasks 1-3)
 
 **Task 1**:
 ## Data Warehousing
-     - Designed a star schema for a retail data warehouse to support analytical queries (e.g., sales by product category per quarter).
+ Designed a star schema for a retail data warehouse to support analytical queries (e.g., sales by product category per quarter).
 ## 1. Schema Design and Diagram
 ## Star Schema Design
 ## Fact Table
@@ -32,7 +32,7 @@ The star schema was selected because:
 
 **Task 2**:
 ## ETL Process Implementation
-    - Implemented an ETL pipeline to generate and load synthetic retail data (1000 rows) into retail_dw.db
+Implemented an ETL pipeline to generate and load synthetic retail data (1000 rows) into retail_dw.db
 
 **Synthetic Data Generation**:
       Creates realistic retail data with 1000 records
@@ -80,7 +80,7 @@ The star schema was selected because:
 
 **Task 3**:
 ## OLAP Queries and Analysis
-      -Executed three OLAP queries (roll-up, drill-down, slice), visualized sales by country, and provided an analysis report.
+Executed three OLAP queries (roll-up, drill-down, slice), visualized sales by country, and provided an analysis report.
 
 This notebook executes three OLAP-style SQL queries on the retail data warehouse (`retail_dw.db`) created in Task 2, visualizes the roll-up query result (total sales by country) as a bar chart saved as `task3_sales_by_country.png`, and logs the process. The queries support analysis of sales trends, customer behavior, and product performance.
 
@@ -227,7 +227,7 @@ This notebook implements Task 3 of the DSA 2040 Practical Exam (Section 2: Data 
    ## However, the Decision Tree provides better interpretability - we can see that petal width ≤ 0.8 cm perfectly identifies setosa, while virginica requires petal length > 4.95 cm.
 
 **Part B: Association Rule Mining**
-- Generates synthetic transactional data (50 transactions, 3–8 items from 20-item pool with patterns).
+-Generates synthetic transactional data (50 transactions, 3–8 items from 20-item pool with patterns).
 - Applies Apriori algorithm (min_support=0.2, min_confidence=0.5) using `mlxtend`.
 - Displays top 5 rules by lift and analyzes one rule.
 - Saves transactional data as `synthetic_transactions.csv`.
